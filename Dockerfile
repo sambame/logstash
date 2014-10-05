@@ -14,4 +14,4 @@ VOLUME ["/var/log"]
 VOLUME ["/conf"]
 
 WORKDIR /var/lib/logstash
-CMD ["bin/logstash", "agent", "--config", "/conf/*.conf", "${LOGSTASHDEBUG}"]
+CMD ["bin/logstash", "agent", "--config", "/conf/*.conf"]
