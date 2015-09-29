@@ -14,4 +14,5 @@ VOLUME ["/var/log"]
 VOLUME ["/conf"]
 
 WORKDIR /var/lib/logstash
+RUN ./bin/plugin install logstash-output-tcp
 CMD ["bin/logstash", "agent", "--config", "/conf/*.conf"]
